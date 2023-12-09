@@ -8,64 +8,32 @@ Product reviews provide insights into customers' experiences, satisfaction level
 
 DEPLOYED MODEL URL: https://okikimodel.onrender.com/
 
-![jumia.jpeg](/config/jumia.jpeg)
+![image](https://github.com/iamfaqeehhokyky/modelDeployment/assets/73473767/8f466609-5b10-40bd-97ac-f5b3f955cee7)
 
-<aside>
+![image](https://github.com/iamfaqeehhokyky/modelDeployment/assets/73473767/19de1142-ed97-45fa-ad50-e76dfd4c1fae)
 
-**NOTE!**
+## Getting Started
 
-- This is an individual assignment.
-- Be ready to do additional googling to complete this exercise, if necessary.
-- Feel free to explore, experiment, and ask questions if you encounter any challenges.
-</aside>
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/kibo-frontend-web-dev-oct-23/week-6-final-project-iamfaqeehhokyky.git
+   ```
+2. **Navigate into the project folder**:
+   ```bash
+   cd okiki_pokedex
+   ```
+3. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+4. **Run the App**:
+   ```bash
+   npm run dev
+   ```
 
-## Sentiment Analysis of Jumia Product Reviews
+## Usage
 
-In this assignment, you will apply your knowledge of sentiment analysis to analyze the sentiments expressed in product reviews by Jumia customers. You will work alone to preprocess the text data, build a sentiment analysis model, and interpret the results.
-
-### Dataset
-
-You are provided with a dataset containing customer reviews. The dataset includes the following columns:
-
-- **Rating**: Customer rating of each product, which ranges from 1 to 5.
-- **Title**: title of each review (e.g., I like it).
-- **Review**: customer opinion about the products.
-
-### Repository
-
-[![Click to open the project](https://img.shields.io/static/v1?label=Open%20Project&message=Jumia%20Customer%20Reviews&color=blue)](https://github.com/kiboschool/sentiment-analysis-jumia-reviews.git)
-
-### TODOs
-
-- Load the dataset and take a quick look at the first few rows.
-- Explore the distribution of sentiment labels in the dataset.
-- Engineer a new feature called `Sentiment` from the _Rating_ column. This takes the values `-1`, `0`, and `1` for _negative_, _neutral_, and _positive_.
-  - Reviews with `Rating > 3` is _positive_
-  - Reviews with `Rating = 3` is _neutral_
-  - Reviews with `Rating < 3` is _negative_
-- Preprocess the text data by converting to lowercase and removing punctuation.
-- Tokenize the text data to split it into individual words or tokens.
-- Choose a feature extraction technique (e.g., `BoW`, `TF-IDF`) and implement it.
-- Split the dataset into training and testing sets.
-- Build and train a sentiment classification model using an appropriate algorithm.
-- Evaluate the model's performance using `accuracy`, `precision`, `recall`, and `F1-score`.
-- Fine-tune the model and preprocessing techniques to improve results.
-- Present your findings in a report, including the evaluation metrics and insights from the analysis.
-- Complete the assignment using the `notebook` in the repository.
-  - Push your solution back to Github once completed.
-- Submit your notebook on **[Gradescope](https://www.gradescope.com/courses/544001/assignments)**
-  - Look for **Assignment - NLP** under assignments.
-
-### HINTS
-
-- Document your code clearly with comments explaining each step.
-- Perform text preprocessing techniques such as lowercase conversion, tokenization, and stopwords removal.
-- Remove any special characters or symbols that might not contribute to sentiment analysis.
-- Convert the preprocessed text into numerical features suitable for analysis.
-- You can choose from techniques like Bag of Words, TF-IDF, or Word Embeddings. Remember to explain your choice.
-- Utilize libraries like `Scikit-learn`, `NLTK`, or `spaCy` for text preprocessing and model dvelopment tasks.
-- Provide visualizations and tables to support your analysis.
-
-Remember, this assignment is an opportunity to apply your NLP skills to real-world data and gain hands-on experience in sentiment analysis.
+- Upon running the app, it will fetch the Pokémon data and display it initially on the client side.
+- User can then click or select any of the listed Pokémon to see their details.
 
 ## `Good Luck! 🤝`
