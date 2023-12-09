@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Model Deployment</title>
+        <style>
+            body {
+                font-family: 'Arimo', sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+
+            .login {
+                width: 300px;
+                margin: 50px auto;
+                background: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            h1, p {
+                font-family: 'Pacifico', cursive;
+                text-align: center;
+                color: #333;
+            }
+
+            /* p {
+                font-family: 'Pacifico', cursive;
+                text-align: center;
+                color: #333;
+            } */
+
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            input {
+                margin-bottom: 10px;
+                padding: 8px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            button {
+                background-color: #4caf50;
+                color: white;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+            button:hover {
+                background-color: #45a049;
+            }
+
+            p, .prediction {
+                margin-top: 20px;
+                font-size: 18px;
+                color: #333;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="login">
+            <h1>Sulaimon's Prediction Model</h1>
+            <br>
+            <p>This is a Sentiment Analysis Prediction Web App</p>
+
+            <!-- Main Input For Receiving Query to our ML -->
+            <form action="{{ url_for('predict')}}" method="post">
+                <input type="text" name="Rating" placeholder="Rating" required="required" />
+                <input type="text" name="Title" placeholder="Title" required="required" />
+                <input type="text" name="Review" placeholder="Review" required="required" />
+
+                <button type="submit">Predict</button>
+            </form>
+
+            <div class="prediction">
+                {{ prediction_text }}
+            </div>
+        </div>
+    </body>
+
+</html>
