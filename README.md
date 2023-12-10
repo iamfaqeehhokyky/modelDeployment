@@ -49,7 +49,9 @@ An Ngrok link will be auto generated which you can as well run on the browser to
 ## Usage
 
 - Upon running the app, you'll have to enter the rating value, title of the review and the customer review statement.
-- User can then click or select any of the listed Pokémon to see their details.
+- Click on the predict button and the model will predict the sentiment and give you the result of the analysis.
+
+_See screenshot below_
 
 ![image](https://github.com/iamfaqeehhokyky/modelDeployment/assets/73473767/19de1142-ed97-45fa-ad50-e76dfd4c1fae)
 
